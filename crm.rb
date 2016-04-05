@@ -2,7 +2,6 @@ require_relative 'contact'
 require 'sinatra'
 require 'pry'
 
-
 get '/' do
   @crm_app_name = "Hisayo's CRM"
   erb :index
@@ -27,6 +26,7 @@ get '/contacts/:id' do
   @one_contact = Contact.find(params["id"].to_i)
  erb :one_contact
 end
+
 
 delete '/contacts/:id' do
   @one_contact = Contact.find(params["id"].to_i)
