@@ -1,0 +1,13 @@
+
+<h1>All Contacts</h1>
+
+<ul class ="all_contact">
+<a class="edit_link" href="/new_contact">Add new contacts</a>
+<% Contact.all.each do |contact| %>
+  <li>
+    <a href= "/contacts/<%= contact.id%>">
+      <%= contact.first_name %> <%= contact.last_name %>
+    </a>
+  </li>
+<% end %>
+</ul>

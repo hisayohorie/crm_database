@@ -1,0 +1,16 @@
+<!--form, action, input -->
+<h1>Create New Contact</h1>
+<form class ="new_contact" action ="/contacts" method ="post">
+  <input type="hidden" name="_method" value="post">
+  First name:
+  <input type="text" name="first_name">
+  Last name:
+  <input type="text" name="last_name">
+  Email:
+  <input type="text" name="email">
+  Note:
+  <div class="note">
+    <textarea name="note"></textarea>
+  </div>
+  <input type="submit">
+</form>

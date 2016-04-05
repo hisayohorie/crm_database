@@ -1,0 +1,105 @@
+a {
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #AEBD38;
+  color:
+  margin: 0;
+  padding: 10px;
+  width: auto;
+}
+
+header a {
+  margin: 0;
+  padding: 11px;
+  font-family:Helvetica;
+  color: #505160;
+
+}
+
+header a:hover {
+  background-color : #598234;
+  color: white;
+  font-family: Helvetica;
+}
+
+h1 {
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.main_menu {
+  color: #505160;
+  background-color: white;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Helvetica;
+}
+.main_menu p {
+  font-size: 18px;
+  text-align: center;
+}
+.main_menu ul {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+.main_menu li {
+    list-style-type: none;
+    padding: 10px;
+    text-align: center;
+    display: block;
+}
+.main_menu li a {
+  text-decoration: none;
+}
+
+.main_menu li a:hover {
+  color: #505160;
+}
+.main_menu a:hover > li {
+  background-color: green;
+}
+
+.all_contact {
+  text-align: center;
+  padding-left: 0;
+}
+.edit_link {
+  font-size: 20px;
+  font-family: Helvetica;
+  padding: 5px;
+  display: block;
+}
+
+.edit_link a {
+  padding: 5px;
+}
+.all_contact li {
+  list-style-type: none;
+  margin: 0 auto;
+  padding:5px
+
+}
+
+h1 {
+  margin: 0 auto;
+  background-color: #C4DEF6
+}
+
+form {
+  margin: 0;
+  padding: 15px;
+}
+
+footer {
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
