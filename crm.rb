@@ -14,14 +14,18 @@ get '/contacts' do
 end
 
 post '/contacts' do
- Contact.create(params["first_name"],params['last_name'],params['email'],params['note'])
-
-  erb :contacts
+  contact = Contact.create(
+    first_name: params[:first_name],
+    last_name: params[:last_name],
+    email: params[:email],
+    note: params[:note]
+  )
+  redirect to ('contacts')
 end
 
 get '/contacts/:id' do
-    @one_contact = Contact.find(params["id"].to_i)
-  erb :one_contact
+  @one_contact = Contact.find(params["id"].to_i)
+ erb :one_contact
 end
 
 delete '/contacts/:id' do
@@ -34,13 +38,18 @@ get '/contacts/:id/edit' do
   @one_contact = Contact.find(params["id"].to_i)
   erb :edit_contacts
 end
-
+# this doesnt' work!
 patch '/contacts/:id' do
   @one_contact = Contact.find(params["id"].to_i)
-  @one_contact.update("first_name", params["first_name"])
-  @one_contact.update("last_name", params["last_name"])
-  @one_contact.update("email", params["email"])
-  @one_contact.update("note", params["note"])
+  @one_contact.update_attributes(:first_name => params["first_name"],:last_name =>params["last_name"],
+  :email => params["email"],:note =>params["note"])
+
+  @one_contact.save
+
+  # @one_contact.update("first_name", params["first_name"])
+  # @one_contact.update("last_name", params["last_name"])
+  # @one_contact.update("email", params["email"])
+  # @one_contact.update("note", params["note"])
   #@one_contact.update(first_name, )
   erb :contacts
 end
