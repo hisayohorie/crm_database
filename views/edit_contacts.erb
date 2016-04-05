@@ -2,15 +2,24 @@
 <div class="information">
   <form class="" action="/contacts/<%=@one_contact.id%>" method="post">
   <input type="hidden" name="_method" value="patch">
-  First name:
-  <input type="text" name="first_name" value="<%=@one_contact.first_name%>">
-  Last name:
-  <input type="text" name="last_name" value="<%=@one_contact.last_name%>">
-  Email
-  <input type="text" name="email" value="<%=@one_contact.email%>">
-  Note
-  <input type="textarea" name="note" value="<%=@one_contact.note%>">
-  <input type="submit">
+    <span>
+      First name:
+      <input type="text" name="first_name" value="<%=@one_contact.first_name%>">
+    </span>
+    <span>
+      Last name:
+      <input type="text" name="last_name" value="<%=@one_contact.last_name%>">
+    </span>
+    <p>
+      Email
+    </p>
+    <input type="text" name="email" value="<%=@one_contact.email%>">
+
+    <p>
+      Note:
+    </p>
+    <input type="textarea" name="note" value="<%=@one_contact.note%>">
+    <input type="submit">
 
   </form>
 </div>

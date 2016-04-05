@@ -95,9 +95,17 @@ h1 {
 
 form {
   margin: 0;
-  padding: 15px;
+  padding: 20px;
+  font-family: Helvetica;
 }
+form span {
+  margin: 10px;
+}
+input {
+  display: block;
+  font-family: Helvetica;
 
+}
 footer {
   margin: 0 auto;
   padding: 20px;
