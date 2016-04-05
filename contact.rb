@@ -14,6 +14,7 @@ class Contact < ActiveRecord::Base
      "#{first_name} #{last_name}" #<= no space needed
     # Fill this in
   end
+  Contact.auto_upgrade!
 end
 
   #
